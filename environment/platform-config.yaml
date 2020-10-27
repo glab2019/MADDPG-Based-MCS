@@ -1,0 +1,50 @@
+print_every: 10
+random_seed: 1
+platform_config:
+  n_agent: 8
+  n_task: 2
+  n_stacked_observation: 5
+  price_bound: 1
+  action_bound: [0, 2]
+  weights_bound: [1 ,5]
+  weights: [[1, 2], [2, 3], [3, 4], [4, 5], [5, 6], [6, 7], [7, 8], [8, 9]]
+  task_budget_bound: [25, 26]
+  time_budget_bound: [20, 21]
+  expected_earning_bound: [100, 101]
+  plot_interval: 1
+  penalty_factor: 0.05
+  allocation_threshold: 1
+  mu: 0.05
+
+agent_config:
+  action_size: 1
+  obs_size: 2
+
+train_config:
+  result_path: '/results/train_data/'
+  model_path: '/results/model/'
+  save_every: 50
+  n_episodes: 100
+  max_t: 30
+  mini_batch_size: 128
+  update_every: 2
+  # optimizers:
+  actor_optim_params:
+    lr: 0.001
+  critic_optim_params:
+    lr: 0.001
+
+  # noise
+  ou_noise_start: 2.0
+  ou_noise_decay_rate: 0.98
+
+  # maddpg
+  soft_update_tau: 0.01
+  discount_gamma: 0
+
+  # replay memory
+  buffer_size: 100000
+
+  # length of window
+  len_window: 20
+
