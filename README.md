@@ -1,4 +1,4 @@
-# MADDPG-Based-MCS
+# MADDPG-Based Mobile Crowdsensing
 
 Contents:
 
@@ -9,7 +9,7 @@ Contents:
 
 ## Introduction
 
-This is a repository for "This is a repository for "Multi-Agent Actor-Critic Network-Based Incentive Mechanism for Mobile Crowdsensing in Industrial System".
+This is a repository for "[Multi-Agent Actor-Critic Network-Based Incentive Mechanism for Mobile Crowdsensing in Industrial System](https://ieeexplore.ieee.org/document/9201550)".
 
 ## Installation
 
@@ -40,3 +40,7 @@ Moreover, the settings for training are decribed in `platform-config.yaml` at `\
 ## Citation
 
 If this repository do some help, please consider to cite the paper "Multi-Agent Actor-Critic Network-Based Incentive Mechanism for Mobile Crowdsensing in Industrial System".
+
+### Format
+
+> B. Gu, X. Yang, Z. Lin, W. Hu, M. Alazab and R. Kharel, "Multi-Agent Actor-Critic Network-based Incentive Mechanism for Mobile Crowdsensing in Industrial Systems," in IEEE Transactions on Industrial Informatics, doi: 10.1109/TII.2020.3024611.
